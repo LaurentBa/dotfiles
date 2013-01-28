@@ -1,0 +1,3 @@
+[submodule "vim/bundle/project"]
+	path = vim/bundle/project
+	url = git://github.com/vim-scripts/project.tar.gz.git
