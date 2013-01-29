@@ -19,3 +19,6 @@
 [submodule "vim/bundle/nerdTree"]
 	path = vim/bundle/nerdTree
 	url = git://github.com/vim-scripts/The-NERD-tree.git
+[submodule "vim/bundle/a.vim"]
+	path = vim/bundle/a.vim
+	url = git://github.com/vim-scripts/a.vim.git
