@@ -30,9 +30,6 @@ if has('mouse')
 endif
 set nopaste
 set pastetoggle=<F2>
-" spellchecking
-set spellfile="/.vim/spell/perso.utf-8.add"
-set spellsuggest=10
 
 " Search {{{1
 "~~~~~~~~~~~~~~~
@@ -40,6 +37,15 @@ set ignorecase
 set smartcase
 set incsearch
 set hlsearch
+
+" Spell checking {{{1
+"~~~~~~~~~~~~~~~~~~~~
+" Pressing ,ss will toggle and untoggle spell checking
+map <leader>ss :setlocal spell!<cr>
+map <leader>s :set spell<cr>:set spelllang=fr<cr>
+" spellchecking
+set spellfile=~/.vim/spell/fr.utf-8.add
+set spellsuggest=10
 
 " Appearzance {{{1
 "================
@@ -83,9 +89,12 @@ set tabstop=4
 
 " Plugin (conf & Map) {{{1 
 "==========================
-" Ctag :{{{2
+" Ctag {{{2
 "~~~~~~~~~~~
 map <F7> <Esc>:TlistToggle<CR>
+
+" Plugin Project {{{2
+map <F8> <Esc>:Project<CR>
 
 " NerdTree {{{2
 "~~~~~~~~~~~~~~
@@ -203,11 +212,6 @@ set whichwrap=b,s,<,>,[,]
 set nobackup
 set nowb
 set noswapfile
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Spell checking
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
 
 " Shortcuts using <leader>
 map <leader>sn ]s
