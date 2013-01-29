@@ -28,3 +28,6 @@
 [submodule "vim/bundle/processing"]
 	path = vim/bundle/processing
 	url = git://github.com/vim-scripts/Processing.git
+[submodule "vim/bundle/SuperTab-continued"]
+	path = vim/bundle/SuperTab-continued
+	url = git://github.com/vim-scripts/SuperTab-continued..git
