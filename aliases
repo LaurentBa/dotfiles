@@ -23,15 +23,14 @@ alias vp='v +Project'
 alias ga="git add -A"
 alias g.="git add ."
 alias gu="git add -u"
-alias gas="git add submodule"
 alias gcm="git commit -m"
-alias gitp="git push -u origin master"
+alias gitpush="git push -u origin master"
 alias gitamd="git commit --amend"
 alias gt="git init"
 alias gst="git submodule init"
-alias gst="git submodule init"
+alias gsa="git submodule add"
 alias gsu="git submodule update"
-alias gpom="git pull origin master"
+alias gpull="git pull origin master"
 alias gpomall="git submodule foreach git pull origin master"
 
 ###################
