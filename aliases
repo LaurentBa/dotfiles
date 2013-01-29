@@ -1,0 +1,55 @@
+#!/usr/bin/bash
+
+alias sbash='source ~/.bashrc'
+
+alias ls='ls --color=auto'
+alias ll='ls --color=auto -l'
+alias la='ls --color=auto -a'
+alias lla='ls -l --color=auto -a'
+alias md='mkdir'
+
+alias top='htop'
+
+alias g='gvim'
+alias v='vim'
+alias vi='vim'
+alias gp='g +Project'
+alias vp='v +Project'
+
+
+###################
+# YAOURT - PACMAN #
+###################
+alias p='pacman-color'
+alias y='yaourt'
+alias yss='yaourt -Ss'
+alias ys='yaourt -S'
+alias ysyu='yaourt -Syu'
+alias ysyua='yaourt -Syua'
+alias ysy='yaourt -Sy'
+alias yqs='yaourt -Qs'
+alias yqi='yaourt -Qi'
+alias yql='yaourt -Ql'
+alias yqdt='yaourt -Qdt' # list orphans
+alias ysi='yaourt -Si'
+alias yi='yaourt -i'
+alias ysb='yaourt -Sb'  # Build package from source
+#alias yc='yaourt -C'    # Check, edit, merge or remove *.pac* files
+#alias yqbackup='yaourt -Q --backupfile' #Query backup file: $ yaourt -Q--backupfile <file>
+#alias yb='yaourt -B'    # Backup database
+
+alias yr='yaourt -R'
+alias yrs='yaourt -Rs'
+alias yrsn='yaourt -Rsn'
+alias yrn='yaourt -Rn'
+alias yrn='yaourt -Rn'
+
+#To remove a package, its dependencies and all the packages that depend on the target package: 
+# pacman -Rsc package_name
+
+#To remove a package, which is required by another package, without removing the
+#dependent package: 
+#pacman -Rdd package_name
+
+
+alias vb='kdesu modprobe vboxdrv; virtualbox'

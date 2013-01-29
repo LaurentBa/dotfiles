@@ -1,0 +1,6 @@
+$if mode=vi
+set keymap vi-insert
+"jj": vi-movement-mode
+"\e\e": "\C-a\C-k"
+$endif
+

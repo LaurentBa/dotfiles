@@ -14,12 +14,13 @@ running the commands:
 
 Create symlinks:
 
-    ln -s ~/dotfiles/bashrc ~/.bashrc (not yet)
+    ln -s ~/dotfiles/bashrc ~/.bashrc
+    ln -s ~/dotfiles/inputrc  ~/inputrc
     ln -s ~/dotfiles/vimrc ~/.vimrc
     ln -s ~/dotfiles/gvimrc ~/.gvimrc
     ln -s ~/dotfiles/vim ~/.vim
-    ln -s ~/dotfiles/ctags ~/.ctags (not yet)
-    ln -s ~/dotfiles/tmux.conf ~/.tmux.conf (not yet)
+    ln -s ~/dotfiles/ctags ~/.ctags
+    ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 
 I put Vim's backup and swap files in `~/tmp`, so that directory must exist. To
 be sure, run: 
