@@ -17,6 +17,23 @@ alias gp='g +Project'
 alias vp='v +Project'
 
 
+#######
+# GIT #
+#######
+alias ga="git add -A"
+alias g.="git add ."
+alias gu="git add -u"
+alias gas="git add submodule"
+alias gcm="git commit -m"
+alias gitp="git push -u origin master"
+alias gitamd="git commit --amend"
+alias gt="git init"
+alias gst="git submodule init"
+alias gst="git submodule init"
+alias gsu="git submodule update"
+alias gpom="git pull origin master"
+alias gpomall="git submodule foreach git pull origin master"
+
 ###################
 # YAOURT - PACMAN #
 ###################
