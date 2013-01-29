@@ -1,7 +1,7 @@
+Thanks to https://github.com/nelstrom for the idea and the tuto :
+http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
-# This is a Github test #
-
-Installation
+# Installation#
 
     git clone git://github.com/nelstrom/dotfiles.git
 
@@ -14,12 +14,12 @@ running the commands:
 
 Create symlinks:
 
-    ln -s ~/dotfiles/bashrc ~/.bashrc
+    ln -s ~/dotfiles/bashrc ~/.bashrc (not yet)
     ln -s ~/dotfiles/vimrc ~/.vimrc
     ln -s ~/dotfiles/gvimrc ~/.gvimrc
     ln -s ~/dotfiles/vim ~/.vim
-    ln -s ~/dotfiles/ctags ~/.ctags
-    ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
+    ln -s ~/dotfiles/ctags ~/.ctags (not yet)
+    ln -s ~/dotfiles/tmux.conf ~/.tmux.conf (not yet)
 
 I put Vim's backup and swap files in `~/tmp`, so that directory must exist. To
 be sure, run: 
@@ -53,17 +53,3 @@ as follows:
     git add .
     git ci -m "Added the javascript bundle"
 
-### Command-t
-
-The command-t extension require Vim with ruby support, and furthermore, the
-ruby code depends on a C extension for extra speed. The usual pathogen
-installation proceedure didn't work for me, but I followed these steps to make
-it work:
-
-    cd ~/dotfiles/vim/bundle/command-t/ruby/command-t
-    ruby extconf.rb
-    make
-
-That did the trick.
-
-# RUBY #
