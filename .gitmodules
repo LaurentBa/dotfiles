@@ -25,3 +25,6 @@
 [submodule "vim/bundle/conque_shell"]
 	path = vim/bundle/conque_shell
 	url = git://github.com/vim-scripts/Conque-Shell.git
+[submodule "vim/bundle/processing"]
+	path = vim/bundle/processing
+	url = git://github.com/vim-scripts/Processing.git
