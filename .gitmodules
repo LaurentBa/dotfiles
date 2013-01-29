@@ -4,3 +4,6 @@
 [submodule "vim/bundle/vimwiki"]
 	path = vim/bundle/vimwiki
 	url = git://github.com/vim-scripts/vimwiki.git
+[submodule "vim/bundle/bash-support"]
+	path = vim/bundle/bash-support
+	url = git://github.com/vim-scripts/bash-support.vim.git
