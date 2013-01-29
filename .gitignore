@@ -1,4 +1,9 @@
 ##############
 # .gitignore #
 ##############
+
+# vimfiles
 .netrwhist
+*.swp
+*.swo
+

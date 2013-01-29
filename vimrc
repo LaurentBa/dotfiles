@@ -210,9 +210,9 @@ set whichwrap=b,s,<,>,[,]
 
 " interesting {{{1
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
-set nobackup
-set nowb
-set noswapfile
+"set nobackup
+"set nowb
+"set noswapfile
 
 " Shortcuts using <leader>
 map <leader>sn ]s
