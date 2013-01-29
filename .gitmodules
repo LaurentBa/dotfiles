@@ -31,3 +31,6 @@
 [submodule "vim/bundle/SuperTab-continued"]
 	path = vim/bundle/SuperTab-continued
 	url = git://github.com/vim-scripts/SuperTab-continued..git
+[submodule "vim/bundle/pythoncomplete"]
+	path = vim/bundle/pythoncomplete
+	url = git://github.com/vim-scripts/pythoncomplete.git

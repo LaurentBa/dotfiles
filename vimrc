@@ -23,6 +23,7 @@ set encoding=utf8
 set wildmode=full
 set wildmenu
 filetype plugin indent on
+filetype plugin on
 " set mouse=a
 if has('mouse')
   " Don't want the mouse to work in insert mode.
@@ -162,7 +163,7 @@ augroup END
 
 " completion {{{1
 "let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-au filetype python      set omnifunc=pythoncomplete#Complete
+"au filetype python      set omnifunc=pythoncomplete#Complete
 au filetype html        set omnifunc=htmlcomplete#CompleteTags
 au filetype css         set omnifunc=csscomplete#CompleteCSS
 au filetype javascript  set omnifunc=javascriptcomplete#CompleteJS
