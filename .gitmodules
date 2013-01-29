@@ -34,3 +34,6 @@
 [submodule "vim/bundle/pythoncomplete"]
 	path = vim/bundle/pythoncomplete
 	url = git://github.com/vim-scripts/pythoncomplete.git
+[submodule "vim/bundle/python.vim"]
+	path = vim/bundle/python.vim
+	url = git://github.com/vim-scripts/python.vim.git
