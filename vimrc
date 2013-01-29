@@ -163,7 +163,7 @@ augroup END
 
 " completion {{{1
 "let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-"au filetype python      set omnifunc=pythoncomplete#Complete
+au filetype python      set omnifunc=pythoncomplete#Complete
 au filetype html        set omnifunc=htmlcomplete#CompleteTags
 au filetype css         set omnifunc=csscomplete#CompleteCSS
 au filetype javascript  set omnifunc=javascriptcomplete#CompleteJS
@@ -219,3 +219,5 @@ map <leader>sn ]s
 map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
+" }}}
+
