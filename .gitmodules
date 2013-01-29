@@ -7,3 +7,6 @@
 [submodule "vim/bundle/bash-support"]
 	path = vim/bundle/bash-support
 	url = git://github.com/vim-scripts/bash-support.vim.git
+[submodule "vim/bundle/c.vim"]
+	path = vim/bundle/c.vim
+	url = git://github.com/vim-scripts/c.vim.git
