@@ -51,6 +51,7 @@ set spellsuggest=10
 " Appearzance {{{1
 "================
 syntax on
+syntax enable
 set nu
 set showcmd 
 set showmode
@@ -220,4 +221,4 @@ map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
 " }}}
-
+ :set t_Co=256.
