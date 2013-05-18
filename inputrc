@@ -4,3 +4,20 @@ set keymap vi-insert
 "\e\e": "\C-a\C-k"
 $endif
 
+# Keep hidden files hidden when doing, for example, cp ~/ Tab: 
+#set match-hidden-files off
+
+# Complete things that have been typed in the wrong case: 
+#set completion-ignore-case on
+# List the possible completions when Tab is pressed: 
+#set show-all-if-ambiguous on
+# Make Meta+S cycle through the list: 
+#TAB: menu-complete
+#set completion-display-width -0
+#set completion-query-items 50
+#set page-completions off
+#set show-all-if-ambiguous on
+
+
+#"\C-f": menu-complete
+#"\C-b": menu-complete-backward

@@ -60,7 +60,7 @@ set background=light
 "set cursorline
 "hi cursorline ctermbg=12 ctermfg=White "don't work see it 
 set visualbell
-set textwidth=80
+"set textwidth=80
 set scrolloff=3
 set laststatus=2
 set guifont=DejaVu\ Sans\ Mono\ 11
