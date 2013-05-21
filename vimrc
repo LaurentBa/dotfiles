@@ -1,6 +1,7 @@
 " vim: nowrap fdm=marker
 set nocompatible
 let mapleader = ","
+set dir=~/tmp
 
 " Load bundled plugins {{{1
 "==========================
