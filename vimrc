@@ -12,10 +12,8 @@ call pathogen#helptags()
 runtime macros/matchit.vim
 runtime ftplugin/man.vim
 
-" Preferences {{{1
+" Behaviour {{{1
 "=================
-" Behaviour {{{2
-"~~~~~~~~~~~~~~~
 set backspace=2
 set nojoinspaces
 set encoding=utf8
@@ -48,8 +46,7 @@ map <leader>s :set spell<cr>:set spelllang=fr<cr>
 set spellfile=~/.vim/spell/fr.utf-8.add
 set spellsuggest=10
 
-" Appearzance {{{1
-"================
+" Appearance {{{1
 syntax on
 syntax enable
 set nu
@@ -72,10 +69,10 @@ set statusline=%F%m%r%h%w\
 	\[Line=%04l]\
 	\[Col=%04v]\
 	\[%p%%]\
-" colorscheme {{{2
-"~~~~~~~~~~~~~~~~~
-colorscheme default
-"colorscheme desert
+" colorscheme {{{1
+"================
+"colorscheme default
+colorscheme desert
 "colorscheme blue
 "colorscheme darkblue
 "colorscheme darkblue
@@ -91,19 +88,19 @@ set tabstop=4
 
 " Plugin (conf & Map) {{{1 
 "==========================
-" Ctag {{{2
+" Ctag {{{1
 "~~~~~~~~~~~
 map <F7> <Esc>:TlistToggle<CR>
 
-" Plugin Project {{{2
+" Plugin Project {{{1
 map <F8> <Esc>:Project<CR>
 
-" NerdTree {{{2
+" NerdTree {{{1
 "~~~~~~~~~~~~~~
 map <F9> <Esc>:NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
 
-" VimWiki {{{2
+" VimWiki {{{1
 "~~~~~~~~~~~~~
 " Wikis list
 let g:vimwiki_list = [{'path': '~/vimwiki/adminWiki', 'path_html': '~/vimwiki/adminWiki/http_'},
@@ -120,17 +117,17 @@ hi VimwikiHeader6 guifg=#FFFF00
 
 " Maps {{{1
 "==========
-" cd like cmd {{{2
+" cd like cmd {{{1
 map ,cd :cd %:p:h<CR>
 
-" Bind jj for esc {{{2
+" Bind jj for esc {{{1
 imap jj <Esc>:echo "-- NORMAL MODE --"<CR>
 
-" help navigation {{{2
+" help navigation {{{1
 nmap <Return> <C-]>
 nmap <BS> <C-T>
 
-" tab navigation {{{2
+" tab navigation {{{1
 :nmap <C-S-k> :tabprevious<CR>
 :nmap <C-j> :tabnext<CR>
 :map <C-S-k> :tabprevious<CR>
@@ -144,7 +141,7 @@ map <leader>tn :tabnew<cr>
 map <leader>tc :tabclose<cr>
 map <leader>to :tabonly<cr>
 
-" Script {{{2
+" Script {{{1
 "~~~~~~~~~~~~
 " Latex to Pdf
 map ,pdf :w!<CR>:cd %:p:h<CR>:!~/bin/MakePdf  %
@@ -176,7 +173,9 @@ au filetype xml         set omnifunc=xmlcomplete#CompleteTags
 au filetype vim         set omnifunc=xmlcomplete#CompleteTags
 au filetype glo        	set omnifunc=xmlcomplete#CompleteTags
 
-" old {{{2
+au BufRead *.php set ft=php.html.edit
+au BufNewFile *.php set ft=php.html.edit
+" old {{{1
 "~~~~~~~~~
 " open fierefox ( now i use an other script) 
 "vmap ,o :<C-U>!firefox "<cfile>"& >& /dev/null<CR><CR>
@@ -221,4 +220,4 @@ map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
 " }}}
- :set t_Co=256.
+set t_Co=256

@@ -23,6 +23,8 @@ Create symlinks:
     ln -s ~/dotfiles/vim ~/.vim
     #ln -s ~/dotfiles/ctags ~/.ctags
     ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
+    # to add my html wiki snippet file
+    ln -s ~/dotfiles/edit.snippets ~/dotfiles/vim/bundle/snipMate/snippets/edit.snippets
 
 I put Vim's backup and swap files in `~/tmp`, so that directory must exist. To
 be sure, run: 
