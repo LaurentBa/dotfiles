@@ -136,8 +136,8 @@ nmap <BS> <C-T>
 :map <C-j> :tabnext<CR>
 :imap <C-S-k> <Esc>:tabprevious<CR>i
 :imap <C-j> <Esc>:tabnext<CR>i
-':nmap <C-t> :tabnew<CR>
-:imap <C-t> <Esc>:tabnew<CR>
+":nmap <C-t> :tabnew<CR>
+":imap <C-t> <Esc>:tabnew<CR>
 " tab open, only, close
 map <leader>tn :tabnew<cr>
 map <leader>tc :tabclose<cr>
