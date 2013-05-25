@@ -42,7 +42,7 @@ set hlsearch
 "~~~~~~~~~~~~~~~~~~~~
 " Pressing ,ss will toggle and untoggle spell checking
 map <leader>ss :setlocal spell!<cr>
-map <leader>s :set spell<cr>:set spelllang=fr<cr>
+map <leader>s  :set spelllang=fr spell<cr>
 " spellchecking
 set spellfile=~/.vim/spell/fr.utf-8.add
 set spellsuggest=10
