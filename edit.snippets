@@ -1,14 +1,35 @@
 snippet dl
 	<dl>
-		<dt><a href="http://www.">LinkName</a>
-			- complement
+		<dt><a href="${1:value}">${2:value}</a>
+			- ${3:value}
 		</dt>
 		<dd>
-			details
-		</
-		dd>
+			${4:value}
+		</ dd>
 	</dl>
 snippet pre
 	<pre>
 	</pre>
-
+snippet precode
+	<pre><code>
+	</code></pre>
+snippet code
+	<code></code>
+snippet url
+	<?php echo $BASE_URL . "${1:value}"?>
+snippet h1
+	<h1>${1:value}</h1>
+snippet h2
+	<h2>${1:value}</h2>
+snippet h3
+	<h3>${1:value}</h3>
+snippet h4
+	<h4>${1:value}</h4>
+snippet h5
+	<h5>${1:value}</h5>
+snippet h6
+	<h6>${1:value}</h6>
+snippet p
+	<p>${1:value}</p>
+snippet a
+	<a href="${1:value}">${2:value}</a>

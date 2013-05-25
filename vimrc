@@ -105,6 +105,7 @@ let NERDTreeShowBookmarks=1
 "~~~~~~~~~~~~~
 " Wikis list
 let g:vimwiki_list = [{'path': '~/vimwiki/adminWiki', 'path_html': '~/vimwiki/adminWiki/http_'},
+\{'path': '~/vimwiki/privateWiki', 'path_html': '~/vimwiki/privateWiki/http_'},
 \{'path': '~/vimwiki/projectWiki', 'path_html': '~/vimwiki/projectWiki/http_'},
 \{'path': '~/vimwiki/memoWiki', 'path_html': '~/vimwiki/memoWiki/http_'},
 \{'path': '~/vimwiki/oldWiki', 'path_html': '~/vimwiki/oldWiki/http_' }]
@@ -135,7 +136,7 @@ nmap <BS> <C-T>
 :map <C-j> :tabnext<CR>
 :imap <C-S-k> <Esc>:tabprevious<CR>i
 :imap <C-j> <Esc>:tabnext<CR>i
-:nmap <C-t> :tabnew<CR>
+':nmap <C-t> :tabnew<CR>
 :imap <C-t> <Esc>:tabnew<CR>
 " tab open, only, close
 map <leader>tn :tabnew<cr>

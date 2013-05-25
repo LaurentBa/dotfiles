@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 #Set colors 
-COL_VERT='1;32m'
+COL_VERT='1;32'
 
 COL_PY='38;5;45'
 COL_C='38;5;39'
