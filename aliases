@@ -15,7 +15,7 @@ alias v='vim'
 alias vi='vim'
 alias gp='g +Project'
 alias vp='v +Project'
-
+alias shut='shutdown -h now'
 
 #######
 # GIT #

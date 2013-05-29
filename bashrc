@@ -21,7 +21,7 @@ COL_PDF='38;5;217'
 PS1='\[\e[${COL_VERT}m\][\u@\h \W]\$\[\e[0m\] '
 
 export EDITOR="vim"
-export PAGER="vimpager"
+export PAGER="most"
 
 export PATH=$PATH:/usr/bin/vendor_perl:~/bin
 
