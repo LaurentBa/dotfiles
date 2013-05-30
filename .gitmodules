@@ -46,6 +46,6 @@
 [submodule "vim/bundle/vim-less"]
 	path = vim/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
-[submodule "vim/bundle/TVO"]
-	path = vim/bundle/TVO
-	url = https://github.com/vim-scripts/TVO--The-Vim-Outliner-with-asciidoc-supp.git
+[submodule "vim/bundle/TVO-outliner"]
+	path = vim/bundle/TVO-outliner
+	url = https://github.com/vim-scripts/TVO--The-Vim-Outliner.git
