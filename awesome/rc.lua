@@ -10,6 +10,7 @@ local beautiful = require("beautiful")
 -- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
+local vicious = require("vicious")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -39,7 +40,10 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+-- lists of themes
+--beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+--beautiful.init("/usr/share/awesome/themes/sky/theme.lua")
+beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
@@ -103,6 +107,8 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- {{{ Wibox
 -- Create a textclock widget
 mytextclock = awful.widget.textclock()
+
+
 
 -- Create a wibox for each screen and add it
 mywibox = {}
@@ -169,6 +175,18 @@ for s = 1, screen.count() do
     -- Create a tasklist widget
     mytasklist[s] = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, mytasklist.buttons)
 
+    -- Initialize widget
+    volumewidget = wibox.widget.textbox()
+    -- -- Register widget
+    vicious.register(volumewidget, vicious.widgets.volume, " vol: $1% ",2,"PCM")
+    
+    volumewidget:buttons(awful.util.table.join(
+        awful.button({ }, 1, function () awful.util.spawn("urxvt -e alsamixer") end),
+        awful.button({ }, 2, function () awful.util.spawn("amixer -q sset Master toggle")   end),
+        awful.button({ }, 4, function () awful.util.spawn("amixer -q sset PCM 2dB+", false) end),
+        awful.button({ }, 5, function () awful.util.spawn("amixer -q sset PCM 2dB-", false) end)
+    ))
+
     -- Create the wibox
     mywibox[s] = awful.wibox({ position = "top", screen = s })
 
@@ -181,6 +199,7 @@ for s = 1, screen.count() do
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
     if s == 1 then right_layout:add(wibox.widget.systray()) end
+    right_layout:add(volumewidget)
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
 
