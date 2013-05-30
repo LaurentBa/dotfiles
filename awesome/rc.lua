@@ -203,6 +203,14 @@ root.buttons(awful.util.table.join(
 -- }}}
 
 -- {{{ Key bindings
+awful.menu.menu_keys = {  up = {"k", "Up"},
+                          down = {"j", "Down"},
+                          exec = {"l", "Return", "Right"},
+                          enter = {"Right"},
+                          back = {"h", "left"},
+                          close = {"q", "Escape"}
+                       }
+
 globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
